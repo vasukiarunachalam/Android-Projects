@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+     <style name="patternDialogStyle" parent="@android:style/Theme.Dialog">
+          <item name="android:background">@color/gray5</item>
+          <item name="android:title">@color/green</item>
+     </style>
+</resources>

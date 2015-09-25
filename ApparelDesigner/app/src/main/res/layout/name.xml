@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<TableLayout
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+    <TableRow
+        android:id="@+id/NameRow"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal">
+        <TextView
+            android:text="Name:"
+            android:id="@+id/textView"
+            android:gravity="right"
+            />
+
+        <EditText
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edtName"
+            android:gravity="center_horizontal"
+            />
+
+    </TableRow>
+    <TableRow>
+        <com.design.apparel.appareldesigner.TouchImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/imageView"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:text="Email :"
+            android:id="@+id/textView2"
+            />
+
+        <EditText
+            android:text="Email"
+            android:ems="10"
+            android:id="@+id/edtEmail"
+            />
+    </TableRow>
+</TableLayout>
+</LinearLayout>

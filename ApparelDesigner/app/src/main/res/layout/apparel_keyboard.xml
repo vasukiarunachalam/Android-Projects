@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:theme="@android:style/Theme.Holo.Light.Panel"
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@android:style/Theme.Holo.Light.Panel"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+    <TableRow>
+        <Button android:id="@+id/btnclr" android:text="CLR"  android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btnrb" android:text ="("  android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btnlb" android:text =")" android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btndl" android:background="@drawable/sym_keyboard_delete" android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btndone" android:background="@drawable/sym_keyboard_done" android:textSize="12sp" android:layout_width="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+
+        <Button android:id="@+id/btnMB" android:text ="M_B" android:textSize="12sp" android:layout_width="wrap_content" />
+        <Button android:id="@+id/btnMH" android:text ="M_H" android:textSize="12sp" android:layout_width="wrap_content" />
+        <Button android:id="@+id/btnMW" android:text ="M_W" android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btnH"   android:text ="H" android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btnW"   android:text ="W"  android:textSize="12sp" android:layout_width="wrap_content"/>
+        
+    </TableRow>
+    <TableRow>
+        <Button android:id="@+id/btnMOL"   android:text ="M_OL" android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btnMSW"   android:text ="M_SW"  android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btnMSL"   android:text ="M_SL"  android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btnadd" android:text ="+"  android:textSize="14sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btnsub" android:text ="-"  android:textSize="14sp" android:layout_width="wrap_content"/>
+        
+    </TableRow>
+    <TableRow>
+       
+        <Button android:id="@+id/btnMBW"   android:text ="M_BW"  android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btnMUAC"   android:text ="M_UAC"  android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btnMBWL"   android:text ="M_BWL"  android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btnmul"   android:text ="*"  android:textSize="14sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btndiv"   android:text ="/"  android:textSize="14sp" android:layout_width="wrap_content"/>
+      
+    </TableRow>
+    <TableRow>
+         <Button android:id="@+id/btn1"   android:text ="1"  android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btn2"   android:text ="2"  android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btn3"   android:text ="3"  android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btn4"   android:text ="4"  android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btn5"   android:text ="5"  android:textSize="12sp" android:layout_width="wrap_content"/>
+      
+</TableRow>
+
+    <TableRow>
+        <Button android:id="@+id/btn6"   android:text ="6"  android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btn7"   android:text ="7" android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btn8"   android:text ="8" android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btn9"   android:text ="9"  android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btn0"   android:text ="0"  android:textSize="12sp" android:layout_width="wrap_content"/>
+       
+    </TableRow>
+        <TableRow>
+        <Button android:id="@+id/btnpow"   android:text ="pow" android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btnsqrt"   android:text ="sqrt" android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btnsin"   android:text ="sin" android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btncos"   android:text ="cos" android:textSize="12sp" android:layout_width="wrap_content"/>
+        <Button android:id="@+id/btntan"   android:text ="tan" android:textSize="12sp" android:layout_width="wrap_content"/>
+        </TableRow>
+</TableLayout>
+</RelativeLayout>

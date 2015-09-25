@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.design.apparel.appareldesigner" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+        <uses-sdk android:minSdkVersion="16"/>
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ApparelMenu"
+            android:label="@string/title_activity_apparel_menu"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".AdminMenu"
+            android:label="@string/title_activity_admin_menu"
+            android:parentActivityName=".ApparelMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ApparelMenu" />
+        </activity>
+        <activity
+            android:name=".Apparel_Admin"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:label="@string/title_activity_apparel_admin"
+            android:parentActivityName=".AdminMenu" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".AdminMenu" />
+        </activity>
+        <activity
+            android:name=".ApparelListActivity"
+            android:label="@string/title_activity_dress_list"
+            android:parentActivityName=".ApparelMenu" >
+        </activity>
+        <activity
+                android:name=".SignUPActivity"
+                android:label="@string/title_activity_signup" >
+        </activity>
+        <activity
+            android:name=".Piece_Admin"
+            android:label="@string/title_activity_piece_admin" >
+        </activity>
+        <activity
+            android:name=".Measure_Admin"
+            android:label="@string/title_activity_measure_admin" >
+        </activity>
+         <activity
+            android:name=".MeasureActivity"
+            android:label="@string/title_activity_measure" >
+         </activity>
+         <activity
+            android:name=".Apparel_View"
+            android:label="@string/title_activity_apparel_view" >
+        </activity>
+        <activity
+            android:name=".Piece_View"
+            android:label="@string/title_activity_apparel_view" >
+        </activity>
+        <activity
+            android:name=".PatternAdmin"
+            android:label="@string/title_activity_apparel_view" >
+        </activity>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.6</version>
+            <type>jar</type>
+        </dependency>
+    </application>
+
+</manifest>

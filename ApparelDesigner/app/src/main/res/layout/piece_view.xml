@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_weight="0.82">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:theme="@android:style/Theme.Holo.Light.Panel"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Piece Shape:"
+                android:gravity="right"
+                />
+            <TextView
+                android:id="@+id/txtPiece_Shape"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/blue"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Piece Fold:"
+                android:gravity="right"
+                />
+            <TextView
+                android:id="@+id/txtPiece_Fold"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/blue"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Piece Height:"
+                android:gravity="right"
+                />
+            <TextView
+                android:id="@+id/txtPiece_Height"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/blue"
+                />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Piece Width:"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:id="@+id/txtPiece_Width"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/blue"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Piece Info:"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:id="@+id/txtPiece_Info"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/blue"
+                />
+
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:id="@+id/layout_shape"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/card_layout"
+        android:theme="@android:style/Theme.Holo.Light.Panel"
+        >
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:id="@+id/img_shape"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:id="@+id/img_fold"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pattern Details"
+        android:id="@+id/btnPattern" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dark_gray">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="525dp"
+        android:orientation="vertical"
+        android:id="@+id/cardlayout"
+        android:background="@color/black"
+        android:layout_gravity="top"
+        >
+        <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/patternpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v4.view.PagerTabStrip
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/pager_tab_strip"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="top"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                android:focusable="true"
+                android:theme="@style/AppTheme"
+                />
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout_Add"
+        android:background="@drawable/fabric_bg"
+        android:theme="@android:style/Theme.Holo.Light.Panel"
+        android:gravity="center_horizontal"
+        >
+
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:text="Update"
+            />
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:text="Delete"
+            />
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:text="Exit"
+            />
+    </LinearLayout>
+</LinearLayout>

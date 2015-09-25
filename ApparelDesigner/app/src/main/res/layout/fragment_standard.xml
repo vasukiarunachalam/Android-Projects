@@ -1,0 +1,114 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff5a2027"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Standard Measurements"
+        android:id="@+id/title"
+        android:textColor="#ff4adde1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp">
+        <RadioGroup
+            android:id="@+id/standard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            >
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:text="Women"
+                android:id="@+id/radioWomen"
+                android:textColor="#ffeaec66"
+                android:checked="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="#ff4adde1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:text="Petite"
+                android:id="@+id/radioPetite"
+                android:textColor="#ffe5e651"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="#ff4adde1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:text="Girls"
+                android:id="@+id/radioGirls"
+                android:textColor="#ffdad757"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+
+                android:buttonTint="#ff4adde1" />
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/women_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffd9dbd3"
+            android:spinnerMode="dropdown"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="80dp"
+            android:layout_toRightOf="@id/standard"
+            android:dropDownSelector="#ff968d93"
+            android:popupBackground="#ff67c3a6" />
+        <Spinner
+            android:id="@+id/petite_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffd9dbd3"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="180dp"
+            android:layout_toRightOf="@id/standard"
+            />
+        <Spinner
+            android:id="@+id/girls_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffd9dbd3"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="280dp"
+            android:layout_toRightOf="@id/standard"/>
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btnSubmit"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+
+</LinearLayout>

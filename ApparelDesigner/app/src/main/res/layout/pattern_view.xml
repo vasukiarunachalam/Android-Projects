@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="1000dp"
+    android:minHeight="1000dp"
+    android:background="@color/dark_gray"
+    android:theme="@android:style/Theme.Holo.Light.Panel"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout1"
+        android:background="@drawable/card_layout"
+        android:theme="@android:style/Theme.Holo.Light.Panel"
+  >
+
+        <TableLayout
+            android:id="@+id/t_img_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/txt_image_id"
+                    android:gravity="center"
+                    />
+
+            </TableRow>
+        </TableLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center"
+            android:theme="@android:style/Theme.Holo.Light.Panel"
+            >
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id="@+id/layoutimage"
+                android:theme="@android:style/Theme.Holo.Light.Panel"
+                android:layout_gravity="center|center">
+            </RelativeLayout>
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/card_layout"
+            android:theme="@android:style/Theme.Holo.Light.Panel"
+
+            >
+            <TextView
+                android:text="R and Angle - "
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txtPattern"
+                android:layout_margin="10dp"
+                android:textColor="@color/green"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <ImageView
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageInfo"
+                android:background="@drawable/pattern_info"
+                android:adjustViewBounds="true"/>
+
+
+        <Button
+                android:id="@+id/btnOK"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:text="Ok"
+
+                />
+
+      </LinearLayout>
+    </LinearLayout>
